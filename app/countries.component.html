@@ -1,8 +1,0 @@
-<div class="divLeft">
-    <li *ngFor="let country of countries" 
-        (click)="onSelect(country)"
-        [class.selected]="country === selectedCountry">
-        <span>{{country.Name}}</span>
-    </li>
-</div>
-<country-details [country]="selectedCountry"></country-details>
