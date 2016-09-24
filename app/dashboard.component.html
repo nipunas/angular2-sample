@@ -1,0 +1,13 @@
+<form *ngIf="active" (ngSubmit)="onSubmit()" #heroForm="ngForm">
+    <div class="formElement">
+        <label for="name">Name</label>
+        <input type="text" id="name" [(ngModel)]="model.Name" name="name">
+    </div>
+    <div class="formElement">
+        <label for="capital">Capital</label>
+        <input type="text" id="capital" [(ngModel)]="model.Capital" name="capital">
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
